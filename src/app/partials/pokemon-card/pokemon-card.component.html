@@ -1,0 +1,25 @@
+<div class="pokemon-card" [id]="pokemon.poke_id">
+  <p>{{ pokemon.name }}</p>
+  <p>{{ pokemon.type }}</p>
+  <img [src]="pokemon.image" [alt]="pokemon.name" />
+  <table>
+    <tbody>
+      <tr>
+        <td>PV</td>
+        <td>{{ pokemon.stats.hp }}</td>
+      </tr>
+      <tr>
+        <td>Défense</td>
+        <td>{{ pokemon.stats.defense }}</td>
+      </tr>
+      <tr>
+        <td>Attaque</td>
+        <td>{{ pokemon.stats.attack }}</td>
+      </tr>
+      <tr>
+        <td>Vitesse</td>
+        <td>{{ pokemon.stats.speed }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

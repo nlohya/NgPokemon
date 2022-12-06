@@ -1,0 +1,27 @@
+.pokemon-card {
+  border: 5px solid yellow;
+  padding: 1em;
+  border-radius: 20px;
+  height: 300px;
+  width: 250px;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+
+.pokemon-card:hover {
+  cursor: pointer;
+  transform: scale(105%);
+}
+
+table {
+  margin-inline: auto;
+  width: 80%;
+  text-align: left;
+}
+
+td {
+  padding: 3px;
+}

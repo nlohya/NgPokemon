@@ -1,0 +1,21 @@
+<nav>
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png"
+  />
+
+  <div>
+    <div *ngIf="loginService?.checkLogged()" class="elems">
+      <ul>
+        <li>
+          <a routerLink="/deck">deck</a>
+        </li>
+        <li>
+          <a routerLink="/store">store</a>
+        </li>
+      </ul>
+      <p>Hello,{{ loginService.getUser().username }}</p>
+      <p>{{ loginService.getUser().coins }}€</p>
+      <button (click)="disconnect()">Disconnect</button>
+    </div>
+  </div>
+</nav>

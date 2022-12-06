@@ -1,0 +1,47 @@
+nav img {
+  width: 100px;
+}
+
+nav {
+  background: #16161a;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.elems {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+a:hover {
+  background-color: antiquewhite;
+  color: #16161a;
+  border-radius: 10px;
+}
+
+li {
+  display: block;
+}

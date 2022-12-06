@@ -1,0 +1,16 @@
+<div *ngIf="loginService?.getUser()">
+  <h1>Poke Store</h1>
+  <img
+    (click)="buyCards()"
+    src="https://www.parkage.com/files/img/products/pokemon/vieux/booster_mcdo_2018.jpg?timestamp=20221121113345"
+    width="200"
+  />
+  <section>
+    <div *ngFor="let pokemon of booster">
+      <div (click)="getCard(pokemon)">
+        <app-pokemon-card [pokemon]="pokemon"></app-pokemon-card>
+      </div>
+      <button (click)="sellCard(pokemon)">Sell card</button>
+    </div>
+  </section>
+</div>

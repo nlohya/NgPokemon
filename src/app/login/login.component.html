@@ -1,0 +1,15 @@
+<div>
+  <h1>Welcome</h1>
+  <form (ngSubmit)="submit($event)">
+    <label for="username">Username</label>
+    <input
+      type="text"
+      class="form-control"
+      id="username"
+      required
+      name="name"
+      [(ngModel)]="user.username"
+    />
+    <input type="submit" value="Login" />
+  </form>
+</div>

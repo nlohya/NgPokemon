@@ -1,0 +1,30 @@
+img {
+  display: block;
+  margin-inline: auto;
+  transition: 0.1s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+}
+
+img:hover {
+  transform: scale(110%);
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+button {
+  display: block;
+  margin-top: 20px;
+  margin-inline: auto;
+  width: 80%;
+}

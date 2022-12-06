@@ -1,0 +1,22 @@
+<div *ngIf="loginService.getUser()">
+  <h1>Your deck</h1>
+  <div class="form">
+    <label for="username">Min attack</label>
+    <input
+      type="number"
+      (change)="updateFilter($event)"
+      (keyup)="updateFilter($event)"
+      min="0"
+    />
+  </div>
+  <section>
+    <div
+      *ngFor="
+        let pokemon of loginService.getUser().cards
+          | attackFilter: this.currentFilter
+      "
+    >
+      <app-pokemon-card [pokemon]="pokemon"> </app-pokemon-card>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,17 @@
+h1 {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.form {
+  width: fit-content;
+  margin-inline: auto;
+}
